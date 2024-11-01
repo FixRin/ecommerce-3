@@ -215,3 +215,57 @@ body {
         }
     }
 }
+.accordion {
+    
+  & a {
+      font-size: 16px;
+      transition: .1s;
+      width: 100%;
+      display: inline-block;
+
+      &:hover{
+          color: var(--primary) !important;
+      }
+  }
+  
+  * {
+      border: none;
+  }
+
+
+}
+.accordion-button:hover{
+  color: var(--primary) !important;
+}
+
+.empty-accordion-button::after{
+  display: none;
+}
+
+
+.offcanvas{
+  z-index: 99999 !important;    
+}
+
+
+.mobile-nav {
+  height: 65px;
+  z-index: 10;
+
+  & span {
+      font-size: 12px;
+  }
+
+  & i {
+      font-size: 22px;
+  }
+
+  @media (min-width: 1025px) {
+      display: none !important;
+  }
+}
+
+.badge{
+  font-size: 8px !important;
+  top: 3px !important; 
+}
