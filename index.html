@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href=" https://cdn.jsdelivr.net/npm/@glidejs/glide@3.6.2/dist/css/glide.core.min.css ">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar bg fixed-top">
+      <div class="container-fluid mx-5 my-3">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start bg-black"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header text-white">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body text-white">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <img
+          src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/10/logo_svg.svg"
+          alt="Poco-Logo"
+          class="img-fluid"
+          width="130px"
+          height="35"
+        />
+        <div class="navbar-brand d-flex gap-2">
+          <div>
+            <a class="nav-items"><i class="fa-solid fa-user"></i></a>
+          </div>
+          <div>
+            <a class="nav-items"><i class="fa-solid fa-heart"></i></a>
+          </div>
+          <div>
+            <a class="nav-items"><i class="fa-solid fa-cart-shopping"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--
+    <section class="slider bg">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="item active">
+            <img
+              src="https://image.similarpng.com/very-thumbnail/2021/10/Pizza-illustration-on-transparent-background-PNG.png"
+              alt="Los Angeles"
+              class="d-block w-50"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              class="d-block w-50"
+              src="https://img.freepik.com/free-photo/pizza-pizza-filled-with-tomatoes-salami-olives_140725-1200.jpg?t=st=1730392345~exp=1730395945~hmac=fe53d81c40bdf9a537f439c13c7aa8a936f319190023ea0390e3e23e0c1ae921&w=740"
+              alt="Chicago"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              class="d-block w-50"
+              src="https://image.similarpng.com/very-thumbnail/2021/10/Pizza-illustration-on-transparent-background-PNG.png"
+              alt="New York"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    -->
+    <section class="my-5 container">
+        <div class="row ">
+          <div class="col-lg-4 col-md-6 card-container mt-5 ">
+            <div class="card bg-purple" style="width: 25rem; height: 17rem; border-radius: 30px;">
+              <div class="card-body py-5 px-5 overflow-hiddden">
+                <h5 class="card-title text-white fs-3 pb-1 fw-bold">
+                SPECIAL FOR <br> YOU<br> MONSTER<br> PIZZA
+                </h5>
+                <button class="btn btn-warning fw-semibold">ORDER NOW</button>
+                <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_banner-img1.png" alt="monster-pizza" style="
+                position: absolute;
+                right: -20%;
+                bottom: -30%;
+                z-index: 0 ;
+                width: 240px;
+                ">
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 card-container mt-5 ">
+            <div class="card bg-red align-items-center py-3" style="width: 25rem; border-radius: 30px; height: 17rem;">
+              <div class="card-body">
+                <h5 class="card-title text-center  text-light fs-3 fw-bold ">
+                  BURGER COMBO
+                </h5>
+              
+                <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_banner-img4.png" width="240px" alt="burger-image" >
+                <h5 class="card-title text-center  text-light fs-5 d-flex gap-3">
+                  3.90 ONLY
+                  <button class="btn btn-warning fw-semibold">ORDER NOW</button>
+                </h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 card-container mt-5">
+            <div class="card bg-lightblue " style="width: 25rem; border-radius: 30px; height: 17rem;">
+              <div class="card-body py-5 px-5 ">
+                <h5 class="card-title text-light fs-2" style="
+                font-family: 'Norican';
+                ">
+                  Delicious
+                </h5>
+                <h5 class="card-title text-light fs-2">FOOD MENU</h5>
+                <p class="card-text text-light">This weekend only</p>
+                <button class="btn btn-warning fw-semibold">ORDER NOW</button>
+                <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_banner-img1.png" alt="monster-pizza" style="
+                position: absolute;
+                right: -20%;
+                bottom: -30%;
+                z-index: 0 ;
+                width: 240px;
+                ">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="col-12 ">
+        <div class="card bg-success d-flex align-items-center py-5" style="border-radius: 30px; height: 15rem;">
+            <div class="card-body w-90">
+                <div class="d-flex gap-3  col--6">
+                    <select class="form-select" style="width: 300px;">
+                        <option selected>1 People</option>
+                        <option value="1">2 People</option>
+                        <option value="2">3 People</option>
+                        <option value="3">4 People</option>
+                    </select>
+
+                    <input class="form-select" style="width: 300px;" type="date" name="date" placeholder="dd/mm/yy">
+                    <input class="form-control" style="width: 300px;" type="datetime" name="datetime" placeholder="00:00 Am">
+                    <button class="btn fw-semibold btn-warning" style="width: 250px; height: 50px;">BOOK A TABLE</button>
+                </div>
+
+                <div class="text-center fs-5 mt-5 text-white">
+                    <p>Booking request <span class="text-warning fw-bold">+39-055-123456</span> or fill out the order form</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+    </section>
+    <section class="container favorites">
+      <h2>Hot Fresh</h2>
+      <h1>Shop our favourites</h1>
+      <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Veggie Lover</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Supreme Pizza</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Tagliatelle Molto</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Trio Cafe</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Trio Cheese</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Tropicana Juice</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Summer Pizza</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+              <li class="glide__slide">
+                  <div class="card rounded-5">
+                      <div class="slide-thumbnail">
+                          <div></div>
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2020/08/52-1.png" alt="slider" width="300px">
+                      </div>
+                      <div class="slide-text card-body">
+                          <div>
+                              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                              <h4 class="card-title">Water Bottle</h4>
+                              <p class="card-text">Extra-virgin olive oil, garlic, cheese, onions, mushrooms, olives.</p>
+                              <div class="price">
+                                  <span>£9.90</span>
+                                  <button class="btn btn-warning"><i class="fa-solid fa-basket-shopping"></i></button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+      </div>
+  </section>
+
+    <section class="our-menu" style="
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    background-image: url(https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_bg1.jpg);
+    padding: 50px 0px;"
+    >
+      <div class="container">
+          <div class="row g-3">
+              <div class="col-lg-6 col-12">
+                  <div class="bg-white rounded-5">
+                      <h2>Special Combo:</h2>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Happy Lunch Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Weekend Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Family Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                  <div class="bg-white rounded-5">
+                      <h2>Kids Menus:</h2>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Happy Lunch Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Weekend Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Family Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                  <div class="bg-white rounded-5">
+                      <h2>Burgers:</h2>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Happy Lunch Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Weekend Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Family Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-6 col-12">
+                  <div class="bg-white rounded-5">
+                      <h2>Chicken:</h2>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Happy Lunch Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Weekend Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                      <div class="menu-inner">
+                          <img src="https://demo2.pavothemes.com/poco/wp-content/uploads/2022/12/h8_menulist2.jpg" alt="menu-img">
+                          <div>
+                              <h5>Family Combo</h5>      
+                              <hr>
+                              <p>Burger, coke, fries, chicken nuggets</p>
+                              <span>£4.95</span>      
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <script
+      src="https://kit.fontawesome.com/4ddb50addb.js"
+      crossorigin="anonymous"
+    ></script> 
+       <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  
+    <script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 4,
+            breakpoints: {
+                800: {
+                perView: 1
+                }
+            }
+        }).mount();
+    </script>
+  </body>
+</html>
